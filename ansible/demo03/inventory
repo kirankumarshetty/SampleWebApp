@@ -1,0 +1,11 @@
+10.128.0.3
+10.128.0.7
+10.128.0.2
+
+[dc]
+10.128.0.3
+10.128.0.7
+
+[dc:vars]
+ansible_ssh_user=root
+ansible_ssh_pass=redhat@123

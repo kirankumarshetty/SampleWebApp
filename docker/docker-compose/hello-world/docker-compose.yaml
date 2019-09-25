@@ -1,0 +1,13 @@
+my-test:
+  image: myapache-v2:v2
+
+
+sonarqube:
+  image: sonarqube 
+  ports:
+    - '30090:9000'
+
+artifactory:
+   image: docker.bintray.io/jfrog/artifactory-cpp-ce:latest
+   ports:
+     - '30081:8081'
