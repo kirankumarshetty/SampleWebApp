@@ -23,7 +23,7 @@
 
   
   - name: Deploy Custom Info file
-    copy: src=templates/VaadinExample-1.0.war dest={{doc_root}}/sample-v1.war
+    copy: src=../../target/VaadinExample-1.0.war dest={{doc_root}}/sample-v1.war
 
   - name: Start Atmosphere Application. 
     shell: nohup /usr/bin/java -jar {{doc_root}}/sample-v1.war & > nohup.out
