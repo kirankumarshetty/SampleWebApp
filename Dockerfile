@@ -1,8 +1,8 @@
 FROM openjdk:8
 
-COPY target/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar  /usr/src/myapp/
+COPY target/VaadinExample-1.0.war  /usr/src/myapp/
 
 WORKDIR  /usr/src/myapp
 
-CMD ["java", "-jar", "spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar"]
+CMD ["java", "-jar", "VaadinExample-1.0.war"]
 
